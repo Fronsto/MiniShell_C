@@ -1,10 +1,16 @@
-# MiniShell
+<div align="center" >
+<img alt="banner" src="https://user-images.githubusercontent.com/95305611/176509889-87a843bf-c5eb-425f-acd7-9959d5ad4951.png" width="800" />
+
 
 This is a mini shell made in C, with linux like syntax. 
+</div>
+
+---
+
 Note: This program creates a history file in /temp directory.
 
 
-## Basic Syntax
+# Basic Syntax
 
 In a single command, there can be a total of atmost 50 arguments with atmost 250 letters.
 Strings entered in input (e.g. echo "hello world") are treated as a single argument, but 
@@ -17,9 +23,8 @@ example: below three commands will get you exact same output.
     `echo  hello  world`
     `echo "hello world"`
 
----
 
-## Commands supported:
+# Commands supported:
 
 Any commands whose binaries are avaiable can be execute with this program. 
 The following lists the internal commands of this shell-
@@ -35,9 +40,8 @@ The following lists the internal commands of this shell-
 
 - printenv and setenv are explained in the last section of this readme file.
 
----
 
-## Piping and Redirection
+# Piping and Redirection
 
 Only single level piping supported, and atmost one input (<) and 
 one output (> or >>) redirection supported in a single command.
@@ -73,9 +77,8 @@ Both commands below are equivalent.
 ```
 Here cat taked input from input.txt, then its output is fed to grep, which then appends input.txt duplicating the lines that contains 'h' character.
 
----
 
-##  Environment Variables.
+#  Environment Variables.
 
 ### printenv
 To get value of some environment variable, use command printenv followed by name of variable, and if no name entered, then the shell prints values of USER, HOME, SHELL, and TERM variables.
